@@ -3,6 +3,7 @@ import /tee.rc
 import /trustonic.rc
 
 on init
+    export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw:/system/lib64/hw
     mkdir /mnt/vendor/persist
     mount ext4 /dev/block/by-name/persist /mnt/vendor/persist rw
     setprop persist.sys.firstlaunch false
@@ -18,6 +19,11 @@ on fs
     setprop crypto.ready 1    
     write /sys/class/oplus_chg/usb/otg_switch 1
     write /sys/class/power_supply/usb/otg_switch 1
+    
+on property:vendor.sys.listener.registered=true
+    start gatekeeper-1-0
+    start keymaster-4-1
+    start gatekeeper-1-0    
 
 service hwservicemanager /system/bin/hwservicemanager
     user root
