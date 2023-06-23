@@ -16,9 +16,6 @@
 /nvram            emmc    /dev/block/by-name/nvram                    flags=display="NvRam";backup=1;
 /nvdata           ext4    /dev/block/by-name/nvdata                   flags=display="NvData";backup=1;subpartitionof=/nvram;
 /nvcfg            ext4    /dev/block/by-name/nvcfg                    flags=display="NvCfg";backup=1;subpartitionof=/nvram;
-/persistent       emmc    /dev/block/by-name/frp
-/proinfo          emmc    /dev/block/by-name/proinfo
-/para             emmc    /dev/block/by-name/para
 /logo             emmc    /dev/block/by-name/logo
 
 /vbmeta_system    emmc     /dev/block/by-name/vbmeta_system           flags=display="Vbmeta System";flashimg=1;backup=1;
