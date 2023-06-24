@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/realme/RMX2151
+LOCAL_PATH := device/realme/RMX2001
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
