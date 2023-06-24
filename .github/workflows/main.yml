@@ -1,4 +1,4 @@
-name: build
+name: buildr6
 on:
   workflow_dispatch:
     inputs:
