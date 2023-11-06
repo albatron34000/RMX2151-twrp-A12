@@ -1,24 +1,3 @@
-Skip to content
-albatron34000
-/
-RMX2151-twrp-A12
-
-Type / to search
-
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-build
-Recovery Build #14
-Jobs
-Run details
-Workflow file for this run
-.github/workflows/main.yml at 8ed03b7
 name: build
 on:
   workflow_dispatch:
